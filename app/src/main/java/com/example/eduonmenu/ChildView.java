@@ -4,7 +4,6 @@ import android.content.Context;
 import android.util.Log;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
 import com.mindorks.placeholderview.annotations.Layout;
@@ -35,8 +34,13 @@ public class ChildView {
     @Resolve
     private void onResolve(){
         Log.d(TAG,"onResolve");
-        textViewChild.setText(food.getName());
+         textViewChild.setText(food.getName());
         textViewPrice.setText(food.getPrice());
+
+
+
+
+
         Glide.with(mContext).load(food.getImageUrl()).apply(RequestOptions.circleCropTransform()).into(childImage);
     }
 }

@@ -4,13 +4,13 @@ import com.google.gson.annotations.SerializedName;
 
 public class Food {
 
-  @SerializedName("name")
+  @SerializedName("menu_name")
   private String name;
-  @SerializedName("price")
+  @SerializedName("menu_price")
   private String price;
   @SerializedName("imageUrl")
   private String imageUrl;
-  @SerializedName("category")
+  @SerializedName("menu_category")
   private String categoty;
 
   public Food(String name, String price, String imageUrl, String categoty) {
@@ -21,6 +21,7 @@ public class Food {
   }
 
   public String getName() {
+
     return name;
   }
 
@@ -55,11 +56,11 @@ public class Food {
   @Override
   public String toString() {
     return "Food{" +
-        "name='" + name + '\'' +
-        ", price='" + price + '\'' +
-        ", imageUrl='" + imageUrl + '\'' +
-        ", categoty='" + categoty + '\'' +
-        '}';
+            "name='" + name + '\'' +
+            ", price='" + price + '\'' +
+            ", imageUrl='" + imageUrl + '\'' +
+            ", categoty='" + categoty + '\'' +
+            '}';
   }
 }
 

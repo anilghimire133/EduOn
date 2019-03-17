@@ -1,6 +1,7 @@
 package com.example.eduonmenu;
 
 import android.content.Context;
+import android.content.Intent;
 import android.util.Log;
 import android.widget.TextView;
 
@@ -34,6 +35,7 @@ public class HeaderView {
     private void onResolve(){
         Log.d(TAG, "onResolve");
         headerText.setText(mHeaderText);
+
     }
 
     @Expand
