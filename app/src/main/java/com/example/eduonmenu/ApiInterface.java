@@ -8,6 +8,7 @@ import retrofit2.http.Header;
 import retrofit2.http.Headers;
 
 public interface ApiInterface {
- @GET("8")
- Call<List<Food>> getAllFoods(@Header("api_id")String id,@Header("api_key")String key);
+ @GET("lvyy2")
+ Call<List<Food>> getAllFoods();
+
 }

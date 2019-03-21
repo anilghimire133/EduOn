@@ -4,13 +4,13 @@ import com.google.gson.annotations.SerializedName;
 
 public class Food {
 
-  @SerializedName("menu_name")
+  @SerializedName("name")
   private String name;
-  @SerializedName("menu_price")
+  @SerializedName("price")
   private String price;
   @SerializedName("imageUrl")
   private String imageUrl;
-  @SerializedName("menu_category")
+  @SerializedName("category")
   private String categoty;
 
   public Food(String name, String price, String imageUrl, String categoty) {

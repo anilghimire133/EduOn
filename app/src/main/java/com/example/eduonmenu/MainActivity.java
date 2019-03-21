@@ -56,7 +56,6 @@ public class MainActivity extends AppCompatActivity {
     private void loadData(){
 
         ApiInterface apiInterface = ApiClient.getInstance().create(ApiInterface.class);
-
         apiInterface.getAllFoods().enqueue(new Callback<List<Food>>() {
             @Override
             public void onResponse(Call<List<Food>> call, Response<List<Food>> response) {
